@@ -1,0 +1,219 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /* margin: 0;
+    padding: 0; */
+}
+
+.header .image {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+.header .tapsContainer {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header .tapsContainer div {
+    padding: 10px;
+    margin: auto 0;
+    cursor: pointer;
+    font-size: 25px;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: bisque;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(186, 222, 235);
+}
+
+.content .startContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content .startContainer .start {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content .startContainer .start .word {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .startContainer .start .word p {
+    margin: 10px;
+    width: 200px;
+}
+
+.content .startContainer .start img {
+    width: 150px;
+    
+}
+
+.content>div {
+    display: flex;
+    padding-top: 5px;
+    flex-direction: column;
+}
+
+.content .start {
+    
+}
+
+.content .photo {
+    background-color: white;
+    width: 75%;
+}
+
+.content .photo img {
+    
+    width: 100%;
+}
+
+
+.slider-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+.slider-button>div,
+.content .start {
+    color: #fff;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    color: black;
+    flex-direction: column;
+}
+
+.slider-button img,
+.content .start img {
+    width: 120px;
+}
+
+.slider-button.next {
+    overflow: hidden;
+}
+
+.slider-button.prev:hover {
+    animation: moveSliderButtonPrev 2s infinite  ;
+    animation-delay: 0ms;
+}
+
+.slider-button.next:hover {
+    animation: moveSliderButtonNext 2s infinite  ;
+    animation-delay: 0ms;
+}
+
+.slider-button:hover img,
+.content .start:hover {
+    animation: changeImgSize 2s infinite alternate ;
+    animation-delay: 0ms;
+}
+
+.content .start:hover img {
+    animation: changeImgSizeStart 2s infinite ease-in-out ;
+    animation-delay: 0ms;
+}
+
+@keyframes moveSliderButtonPrev {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moveSliderButtonNext {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes changeImgSize {
+    0% {
+        width: 120px;
+    }
+    50% {
+        width: 140px;
+    }
+    100% {
+        width: 120px;
+    }
+}
+
+@keyframes changeImgSizeStart {
+    0% {
+        width: 120px;
+    }
+    50% {
+        width: 180px;
+    }
+    100% {
+        width: 120px;
+    }
+}
+
+.slider-button .word,
+.content .start .word {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+}
+
+.content .slider video {
+    border-radius: 20px;
+}
+
+
+.footer {
+    padding: 10px;
+    background-color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+}

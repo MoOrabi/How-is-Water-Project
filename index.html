@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>How is Water?</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="tapsContainer">
+                <div class="water-cycle">Water Cycle</div>
+                <div class="image">
+                    <img src="imgs/howiswater.jpeg" width="70%">
+                </div>
+                <div class="climate-effect">Climate changes effects on Water</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="water-cycle">
+                <div class="startContainer">
+                    <div class="start">
+                        <img src="imgs/down.png">
+                        <div class="word prev-word">
+                            <p>Start</p>
+                            <p>the Journey</p> 
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slider-container">
+                    <div id="prevBtn" class="slider-button prev">
+                        <div class="previous"  style="display: none;">
+                            <div class="word prev-word">
+                                <p>I missed</p>
+                                <p>the previous one</p> 
+                            </div>
+                            <img src="imgs/prev.png">
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <!-- <img src="imgs/evaporation.gif" alt="Image 0" class="slide"> -->
+                        <video controls autoplay width="1000px">
+                            <source src="imgs/evaporation.mp4" type="video/mp4" >
+                        </video>
+                        <video controls autoplay width="100%">
+                            <source type="video/mp4" src="imgs/condensation.mp4" style="display: none;" >
+                        </video>
+                        <video controls autoplay width="100%">
+                            <source type="video/mp4" src="imgs/percipitation.mp4" style="display: none;" >
+                        </video>
+                        <video controls autoplay width="100%">
+                            <source type="video/mp4"   src="imgs/runoff.mp4" style="display: none;" >
+                        </video>
+                    </div>
+                    <div id="nextBtn" class="slider-button next">
+                        <div class="next">
+                            <div class="word next-word">
+                                <p>>></p>
+                                <p>what's next?</p>
+                            </div>
+                            <img src="imgs/next.png" >
+                        </div>
+                        <div class="last" style="display: none;">
+                            <div class="word end-word">
+                                <p>The</p>
+                                <p>End</p>
+                            </div>
+                            <img src="imgs/final.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="climate-effect" style="display: none;">
+                <div class="start">
+                    Tell me the Story
+                </div>
+                <div class="slider-container">
+                    <div id="prevBtn" class="slider-button prev">
+                        <div class="first">
+                            <div class="word prev-word">
+                                <p>Start</p>
+                                <p>Here</p> 
+                            </div>
+                            <img src="imgs/prev.png">
+                        </div>
+                        <div class="previous"  style="display: none;">
+                            <div class="word prev-word">
+                                <p>I missed</p>
+                                <p>the previous one</p> 
+                            </div>
+                            <img src="imgs/prev.png">
+                        </div>                        
+                    </div>
+                    <div class="slider">
+                        <!-- <img src="imgs/evaporation.gif" alt="Image 0" class="slide"> -->
+                        <video controls autoplay width="1000px">
+                            <source src="imgs/climateChange.mp4" type="video/mp4" >
+                        </video>
+                    </div>
+                    <div id="nextBtn" class="slider-button next">
+                        <div class="next">
+                            <div class="word next-word">
+                                <p>>></p>
+                                <p>what's next?</p>
+                            </div>
+                            <img src="imgs/next.png" >
+                        </div>
+                        <div class="last" style="display: none;">
+                            <div class="word end-word">
+                                <p>The</p>
+                                <p>End</p>
+                            </div>
+                            <img src="imgs/final.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            Copyright@2023
+        </div>
+    </div>
+    <script src="js/libgif.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/rubbable.js"></script>
+</body>
+</html>
