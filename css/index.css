@@ -217,3 +217,53 @@ body {
     font-size: 20px;
     text-align: center;
 }
+
+/* Add responsive styles for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    .header .tapsContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .tapsContainer div {
+        width: 100%;
+    }
+
+    .header .image img {
+        width: 100%;
+    }
+
+    .content .startContainer .start {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content .startContainer .start img {
+        width: 50%;
+    }
+
+    .slider-container {
+        flex-direction: column;
+    }
+
+    .slider-button.next {
+        overflow: visible;
+    }
+
+    .slider-button.prev,
+    .slider-button.next {
+        animation: none; /* Remove animations for small screens */
+    }
+
+    .slider-button img,
+    .content .start img {
+        width: 100px;
+    }
+}
+
+/* Additional media queries for other screen sizes if needed */
+@media (max-width: 480px) {
+    /* Add specific styles for even smaller screens */
+}
+
+/* Your existing CSS for larger screens can remain as is */
